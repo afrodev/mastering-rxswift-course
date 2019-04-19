@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		021CFD2A6F9016B2C50E52A7 /* Pods_S04_CameraFiltersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA31FBEC55FDA3423EC11CE /* Pods_S04_CameraFiltersTests.framework */; };
 		6AD28383BF9B2FC6767EFCB5 /* Pods_S04_CameraFilters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E28CD02FE95B794C98D929 /* Pods_S04_CameraFilters.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9E55EDE0226A1F5D0032121C /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E55EDDF226A1F5D0032121C /* FilterService.swift */; };
 		9E5F87FD225F81AD002D1D03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5F87FC225F81AD002D1D03 /* AppDelegate.swift */; };
 		9E5F87FF225F81AD002D1D03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5F87FE225F81AD002D1D03 /* ViewController.swift */; };
 		9E5F8802225F81AD002D1D03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E5F8800225F81AD002D1D03 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 		9E5F8807225F81AE002D1D03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E5F8805225F81AE002D1D03 /* LaunchScreen.storyboard */; };
 		9E5F8812225F81AE002D1D03 /* S04_CameraFiltersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5F8811225F81AE002D1D03 /* S04_CameraFiltersTests.swift */; };
 		9E5F881D225F8351002D1D03 /* PhotoCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5F881C225F8351002D1D03 /* PhotoCollectionVC.swift */; };
+		9EC3898C226943E1001D8FCE /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC3898B226943E1001D8FCE /* PhotoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,7 @@
 		695356D083711EE443204AD7 /* Pods-S04-CameraFilters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S04-CameraFilters.debug.xcconfig"; path = "Target Support Files/Pods-S04-CameraFilters/Pods-S04-CameraFilters.debug.xcconfig"; sourceTree = "<group>"; };
 		6CA31FBEC55FDA3423EC11CE /* Pods_S04_CameraFiltersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_S04_CameraFiltersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E28CD02FE95B794C98D929 /* Pods_S04_CameraFilters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_S04_CameraFilters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E55EDDF226A1F5D0032121C /* FilterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
 		9E5F87F9225F81AD002D1D03 /* S04-CameraFilters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "S04-CameraFilters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E5F87FC225F81AD002D1D03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E5F87FE225F81AD002D1D03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +46,7 @@
 		9E5F8811225F81AE002D1D03 /* S04_CameraFiltersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S04_CameraFiltersTests.swift; sourceTree = "<group>"; };
 		9E5F8813225F81AE002D1D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E5F881C225F8351002D1D03 /* PhotoCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionVC.swift; sourceTree = "<group>"; };
+		9EC3898B226943E1001D8FCE /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		D67B3DA7C863FD7F22D728B8 /* Pods-S04-CameraFilters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S04-CameraFilters.release.xcconfig"; path = "Target Support Files/Pods-S04-CameraFilters/Pods-S04-CameraFilters.release.xcconfig"; sourceTree = "<group>"; };
 		F58D72DB218D41D781B57EDD /* Pods-S04-CameraFiltersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S04-CameraFiltersTests.debug.xcconfig"; path = "Target Support Files/Pods-S04-CameraFiltersTests/Pods-S04-CameraFiltersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE1186F3D066127D84A09ADB /* Pods-S04-CameraFiltersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S04-CameraFiltersTests.release.xcconfig"; path = "Target Support Files/Pods-S04-CameraFiltersTests/Pods-S04-CameraFiltersTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				9E5F8803225F81AE002D1D03 /* Assets.xcassets */,
 				9E5F8805225F81AE002D1D03 /* LaunchScreen.storyboard */,
 				9E5F8808225F81AE002D1D03 /* Info.plist */,
+				9EC3898B226943E1001D8FCE /* PhotoCollectionViewCell.swift */,
+				9E55EDDF226A1F5D0032121C /* FilterService.swift */,
 			);
 			path = "S04-CameraFilters";
 			sourceTree = "<group>";
@@ -307,6 +313,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E5F87FF225F81AD002D1D03 /* ViewController.swift in Sources */,
+				9E55EDE0226A1F5D0032121C /* FilterService.swift in Sources */,
+				9EC3898C226943E1001D8FCE /* PhotoCollectionViewCell.swift in Sources */,
 				9E5F881D225F8351002D1D03 /* PhotoCollectionVC.swift in Sources */,
 				9E5F87FD225F81AD002D1D03 /* AppDelegate.swift in Sources */,
 			);
@@ -471,7 +479,9 @@
 			baseConfigurationReference = 695356D083711EE443204AD7 /* Pods-S04-CameraFilters.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SCH5Y74F7;
 				INFOPLIST_FILE = "S04-CameraFilters/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -479,6 +489,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.afrodev.S04-CameraFilters";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -489,7 +500,9 @@
 			baseConfigurationReference = D67B3DA7C863FD7F22D728B8 /* Pods-S04-CameraFilters.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SCH5Y74F7;
 				INFOPLIST_FILE = "S04-CameraFilters/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -497,6 +510,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.afrodev.S04-CameraFilters";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

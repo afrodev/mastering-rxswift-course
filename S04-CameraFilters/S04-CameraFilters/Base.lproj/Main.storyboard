@@ -22,22 +22,28 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="500.5"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGD-sB-TeB">
-                                <rect key="frame" x="104" y="600" width="166" height="30"/>
+                                <rect key="frame" x="104" y="591" width="166" height="47"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VGD-sB-TeB" secondAttribute="height" multiplier="166:47" id="4bq-ve-2m3"/>
+                                </constraints>
                                 <state key="normal" title="Apply Filter">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="applyFilterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B6h-rV-VEd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VGD-sB-TeB" secondAttribute="trailing" constant="105" id="0mZ-hu-DXc"/>
                             <constraint firstItem="jpq-kX-vGV" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.75" id="6uK-qF-IVL"/>
-                            <constraint firstItem="VGD-sB-TeB" firstAttribute="top" secondItem="jpq-kX-vGV" secondAttribute="bottom" constant="35.5" id="KAN-GB-8VV"/>
                             <constraint firstItem="jpq-kX-vGV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LMZ-qz-rnT"/>
-                            <constraint firstItem="VGD-sB-TeB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="OfH-3f-48W"/>
                             <constraint firstItem="jpq-kX-vGV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="dkK-dK-3bh"/>
                             <constraint firstItem="jpq-kX-vGV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hd3-nr-LE0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VGD-sB-TeB" secondAttribute="trailing" constant="105" id="rQj-Ue-IqQ"/>
+                            <constraint firstItem="VGD-sB-TeB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="iVI-CO-rHg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VGD-sB-TeB" secondAttribute="bottom" constant="29" id="xpB-86-mLb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -48,6 +54,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="applyFilterButton" destination="VGD-sB-TeB" id="43f-aM-fsu"/>
+                        <outlet property="photoImageView" destination="jpq-kX-vGV" id="MtD-qe-fRV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,19 +72,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sLD-ZD-hhx">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="100" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YId-ss-i2T">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="YId-ss-i2T" customClass="PhotoCollectionViewCell" customModule="S04_CameraFilters" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="heW-Zv-e4d">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="heW-Zv-e4d" secondAttribute="height" multiplier="1:1" id="Kqc-GZ-8Ne"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="heW-Zv-e4d" secondAttribute="trailing" id="4Xc-IR-IbK"/>
+                                    <constraint firstItem="heW-Zv-e4d" firstAttribute="top" secondItem="YId-ss-i2T" secondAttribute="top" id="baa-0e-ulS"/>
+                                    <constraint firstAttribute="bottom" secondItem="heW-Zv-e4d" secondAttribute="bottom" id="rBA-Fh-QIF"/>
+                                    <constraint firstItem="heW-Zv-e4d" firstAttribute="leading" secondItem="YId-ss-i2T" secondAttribute="leading" id="x0e-lK-h2c"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="photoImageView" destination="heW-Zv-e4d" id="IaI-E4-wNP"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -86,7 +113,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8oT-hG-4Qg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2711" y="113"/>
+            <point key="canvasLocation" x="2709.5999999999999" y="112.89355322338831"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OK2-Pi-qnZ">
