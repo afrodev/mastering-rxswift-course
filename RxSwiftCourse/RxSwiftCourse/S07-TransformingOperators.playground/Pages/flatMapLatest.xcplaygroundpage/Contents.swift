@@ -6,7 +6,7 @@ import PlaygroundSupport
 let disposeBag = DisposeBag()
 
 // Flat Map: Similar to map
-// Map a sequence to a only object
+// Map a sequence to a only o  bject
 
 struct Student {
     var score: BehaviorRelay<Int>
