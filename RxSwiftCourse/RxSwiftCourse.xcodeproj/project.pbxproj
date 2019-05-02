@@ -43,6 +43,7 @@
 		9E5F87E3225EB1B4002D1D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E5F87EE225EB28B002D1D03 /* S02-IntroObservables.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "S02-IntroObservables.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9E5F87EF225EB28B002D1D03 /* S03-Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "S03-Subject.playground"; sourceTree = "<group>"; };
+		9EB2FDC8227B130E00977FCD /* S09-CombiningOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "S09-CombiningOperators.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		ADC097EB10E8C10FB83A378B /* Pods_RxSwiftCourse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftCourse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,6 +102,7 @@
 				9E5F87EF225EB28B002D1D03 /* S03-Subject.playground */,
 				9E55EDE1226A59330032121C /* S05-FilteringOperators.playground */,
 				9E55EE1D226F54940032121C /* S07-TransformingOperators.playground */,
+				9EB2FDC8227B130E00977FCD /* S09-CombiningOperators.playground */,
 				9E5F87CC225EB1B4002D1D03 /* AppDelegate.swift */,
 				9E5F87CE225EB1B4002D1D03 /* ViewController.swift */,
 				9E5F87D0225EB1B4002D1D03 /* Main.storyboard */,
