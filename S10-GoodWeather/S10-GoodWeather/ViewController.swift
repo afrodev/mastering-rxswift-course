@@ -44,10 +44,21 @@ class ViewController: UIViewController {
         
         let resource = Resource<WeatherResult>(url: url)
         
+      
+        /*
         let search = URLRequest.load(resource: resource)
             .observeOn(MainScheduler.instance)
             .catchErrorJustReturn(WeatherResult.empty)
             .asDriver(onErrorJustReturn: WeatherResult.empty)
+        */
+        
+        let search = URLRequest.load(resource: resource)
+            .observeOn(MainScheduler.instance)
+            .retry(3)
+            .catchError { (error) -> Observable<WeatherResult> in
+                print(error.localizedDescription)
+                return Observable.just(WeatherResult.empty)
+        }.asDriver(onErrorJustReturn: WeatherResult.empty)
         
         search.map( { "\($0.main.temp) ºF" } )
             .drive(self.temperatureLabel.rx.text)
